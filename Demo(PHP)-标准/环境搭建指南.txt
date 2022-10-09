@@ -1,0 +1,10 @@
+1.搭建Java环境
+JDK推荐1.8，高版本配合php-java-bridge有问题（Java环境搭建参考网上资料，安装下JDK，设置PATH即可）
+
+2.配置站点
+1）把 JavaBridge目录解压到磁盘，如 D:\JavaBridge\
+2）双击 run.bat，在弹出的窗口选择 HTTP_LOCAL:8080
+3）查看该目录下生成的 JavaBridge.log，记录下第6行 java.ext.dirs 分号(;)前指向的第一个目录，比如 C:\Program Files\Java\jdk1.8.0_102\jre\lib\ext
+4）拷贝 java-lib 目录下的4个文件到第3点找到的目录（如C:\Program Files\Java\jdk1.8.0_102\jre\lib\ext） 目录下
+5）关闭刚才双击run.bat打开的窗口，重新双击 run.bat，在弹出的窗口选择 HTTP_LOCAL:8080
+6）把 WWW.zip 解压到PHP网站根目录，访问 SaaSDemo.php、SMDemo.php 做验证

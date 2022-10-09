@@ -1,0 +1,27 @@
+Oct 08 15:28:54 JavaBridge INFO : VM                  : 19@https://github.com/Homebrew/homebrew-core/issues
+Oct 08 15:28:54 JavaBridge INFO : JavaBridge version             : 7.2.1    
+Oct 08 15:28:54 JavaBridge INFO : logFile             : JavaBridge.log
+Oct 08 15:28:54 JavaBridge INFO : default logLevel    : 3
+Oct 08 15:28:54 JavaBridge INFO : socket              : HTTP_LOCAL:8080
+Oct 08 15:28:54 JavaBridge INFO : java.ext.dirs       : null
+Oct 08 15:28:54 JavaBridge INFO : php.java.bridge.base: /Users/gdc
+Oct 08 15:28:54 JavaBridge INFO : thread pool size    : 20
+Oct 08 15:28:54 JavaBridge INFO : JavaBridgeRunner started on port INET_LOCAL:8080
+Oct 08 15:28:59 JavaBridge ERROR: An exception occured: java.lang.ClassNotFoundException: dc.demo.DCCryptor
+java.lang.ClassNotFoundException: dc.demo.DCCryptor
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:495)
+	at java.base/java.lang.Class.forName(Class.java:474)
+	at php.java.bridge.Util.classForName(Util.java:783)
+	at php.java.bridge.JavaBridge.CreateObject(JavaBridge.java:469)
+	at php.java.bridge.parser.Request.handleRequest(Request.java:467)
+	at php.java.bridge.parser.Request.handleRequests(Request.java:509)
+	at php.java.bridge.JavaBridge.handleRequests(JavaBridge.java:173)
+	at php.java.bridge.http.JavaBridgeRunner.doPut(JavaBridgeRunner.java:203)
+	at php.java.bridge.http.HttpServer.service(HttpServer.java:289)
+	at php.java.bridge.http.HttpServer$Runner.run(HttpServer.java:205)
+	at php.java.bridge.util.ThreadPool$Delegate.run(ThreadPool.java:60)
+	at php.java.bridge.util.AppThreadPool$Delegate.run(AppThreadPool.java:58)
